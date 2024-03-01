@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(56, 54, 54);
+        }
+        .container {
+            background-color: rgb(174, 238, 219);
+            border: 4px solid rgb(94, 3, 94);
+            /* we can set margin/ padding for top,right, bottom, left like this */
+            /* padding-top: 79px;
+              padding-left: 79px; */
+            /* padding-bottom: 79px;
+                padding-right: 79px; */
+
+            /* padding:49px 56px 59px 65px; */
+            /* margin/padding:top,right,bottom,left; */
+
+            padding: 34px 19px;
+            /* padding: y(top/bottom) x(left/right);  */
+
+            margin: 34px 19px;
+            border-radius: 23px;
+            width: 233px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">This is my paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque
+            perspiciatis sapiente fuga officia tenetur illum.</p>
+    </div>
+    <div class="container">
+        <h2>This is my second heading</h2>
+        <p id="second ">This is my paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque
+            perspiciatis sapiente fuga officia tenetur illum.</p>
+    </div>
+    <div class="container">
+        <h2>This is mythird heading</h2>
+        <p id="third">This is my paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque
+            perspiciatis sapiente fuga officia tenetur illum.</p>
+    </div>
+
+</body>
+
+</html>

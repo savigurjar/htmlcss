@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            content: "";
+            background-image: url('https://source.unsplash.com/user/erondu/1600x900');
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0.5;
+
+        }
+
+        .navigation {
+         
+            display: flex;
+            font-size: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 230px;
+            align-items: center;
+            /* background-image: url("savi.png"); */
+            /* height: 544px; */
+            /* border: 2px solid rgb(68, 5, 5); */
+
+        }
+
+        /* section::before{
+            content:"this is a content"
+        } */
+        /* section::after{
+            content:"this is a content"
+        } */
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>
+            Welcome to coding world
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia expedita quas assumenda deserunt tempore
+            distinctio itaque hic aliquam et quam, pariatur ab, vitae cupiditate omnis corporis inventore
+            perspiciatis, rem facere. Atque mollitia itaque similique?</p>
+    </section>
+    <!-- <hr> -->
+</body>
+
+</html>

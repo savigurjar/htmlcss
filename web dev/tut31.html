@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1 {
+            background-color: cadetblue;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* div li p {
+            color: darkred;
+            font-weight: bold;
+            background-color: rgb(13, 236, 162);
+        } */
+
+        /* div > p {
+            color: darkred;
+            font-weight: bold;
+            background-color: rgb(13, 236, 162);
+        } */
+        /* div + p {
+            color: darkred;
+            font-weight: bold;
+            background-color: rgb(13, 236, 162);
+        } */
+        div  p {
+            color: darkred;
+            font-weight: bold;
+            background-color: rgb(13, 236, 162);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is another paragraph inside li</p>
+                </li>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>
